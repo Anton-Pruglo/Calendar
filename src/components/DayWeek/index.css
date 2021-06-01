@@ -1,0 +1,16 @@
+th {
+  width: 50px;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.dayWeek {
+  /*width: 100%;*/
+  padding: 4px 4px;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid transparent;
+}
+

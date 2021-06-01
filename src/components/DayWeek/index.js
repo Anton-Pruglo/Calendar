@@ -1,0 +1,1 @@
+export { DayWeek } from './DayWeek';
