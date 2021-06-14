@@ -54,28 +54,3 @@ export class DayMonth extends React.Component {
   }
 }
 
-// export function DayMonth(props) {
-//     let { year, month } = props;
-//     let current = new Date(year, month);
-//     let next = new Date(year, month + 1);
-//     let diff = (next - current)/(1000 * 3600 * 24);
-//     let index = (current.getDay() + 6) % 7;
-//     const ROWS = Math.ceil((index + diff) / 7);
-//     const COLS = 7;
-//     let table = [], tr, day = 1 - index;
-//
-//     for (let i = 0; i < ROWS; i++) {
-//         tr= [];
-//         for(let i = 0; i < COLS; i++) {
-//             tr.push(<td>{(day > 0 && day <= diff) ? day : undefined}</td>);
-//             day++;
-//         }
-//         table.push(<tr>{tr}</tr>);
-//     }
-//
-//     return(
-//       <table>
-//           {table}
-//       </table>
-//     );
-// }

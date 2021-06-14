@@ -15,3 +15,23 @@ code {
     monospace;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 344px;
+  height: 432px;
+  left: 0px;
+  top: calc(50% - 432px/2);
+
+  /* White */
+
+  background: #FFFFFF;
+  /* Shadow */
+
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+}

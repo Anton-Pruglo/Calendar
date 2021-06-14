@@ -1,2 +1,1 @@
-// export { ThemeButton } from './ThemeButton'
-export { ThemeContext } from './context'
+export { ThemeContext, ThemeEnum} from './context'

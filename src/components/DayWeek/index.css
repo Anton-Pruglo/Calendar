@@ -7,10 +7,10 @@ th {
 }
 
 .dayWeek {
-  /*width: 100%;*/
-  padding: 4px 4px;
-  vertical-align: middle;
-  text-align: center;
-  border: 2px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
 }
 
