@@ -1,0 +1,23 @@
+.day {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.day.today {
+  background: #7047EB;
+  border-radius: 40px;
+  color: #FFFFFF;
+}
+
+.day.next {
+  color: #61dafb;
+}
+

@@ -1,29 +1,29 @@
 
 const dayIsMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-export function areEqualDay(a, b) {
-    if (!a || !b) {
-      return false;
-    }
 
-    return (
-        a.getFullYear() === b.getFullYear() &&
-        a.getMonth() === b.getMonth() &&
-        a.getDate() === b.getDate()
-    );
+export function isLeapYear(year) {
+   return !((year %  4) || (!(year % 100) && (year % 400)));
 }
 
- export function getDaysInMonth(date) {
+export function getDaysInMonth(date) {
     const month = date.getMonth();
-    return  dayIsMonth[month];
- }
- export function getDayOfWeek(date) {
+    const year = date.getYear();
+
+    if (isLeapYear(year) && month === 1) { // 1 = february
+      return dayIsMonth[month] +1;
+    }else  {
+      return  dayIsMonth[month];
+    }
+}
+
+export function getDayOfWeek(date) {
     const dayOfWeek = date.getDay();
     if(dayOfWeek === 0) return 6;
     return dayOfWeek - 1;
 }
 
-export function getData(year, month) {
+export function Day(year, month) {
     const result = [];
     const date = new Date(year, month);
     const daysInMonth = getDaysInMonth(date);
@@ -33,8 +33,9 @@ export function getData(year, month) {
     for (let i= 0; i < (daysInMonth + monthStartsOn) / 7; i++) {
         result[i] = [];
         for(let j = 0; j < 7; j++) {
-            if ((i === 0 && j < monthStartsOn) || day > daysInMonth) {
+            if ((i === 0 && j < monthStartsOn) || day > daysInMonth ) {
                 result[i][j] = undefined;
+
             } else {
                 result[i][j] = new Date(year, month, day++);
             }

@@ -1,0 +1,106 @@
+.calendar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px;
+  margin: 50px auto;
+  position: static;
+  width: 344px;
+  height: 432px;
+  left: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+
+}
+
+.calendar header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  height: 40px;
+
+}
+
+
+
+.confirmation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: static;
+  height: 64px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.confirmation button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  position: static;
+  width: 136px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.set-date {
+  background: #7047EB;
+  color: white;
+}
+
+.cancel {
+  background: #F8F7FA;
+  color: #19181A;
+}
+
+.month, .year {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px 8px 16px;
+  position: static;
+  width: 80px;
+  height: 40px;
+  background: #F8F7FA;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.month {
+  color: #7047EB;
+}
+
+.calendar.dark {
+  background: #282729;
+  color: #C9C8CC;
+}
+
+.month.dark, .year.dark {
+  background: #313133;
+  color: #F8F7FA;
+}
+
+.cancel.dark {
+  background: #313133;
+  color: #F8F7FA;
+}

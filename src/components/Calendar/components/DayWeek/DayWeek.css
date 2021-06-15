@@ -1,0 +1,15 @@
+.dayWeek {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.dayWeek.dark {
+  color: #F8F7FA;
+}

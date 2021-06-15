@@ -1,8 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import { getMonthData } from './utils'
+import { getData } from './utils'
 
-import './index.css'
+import './DayMonth.css'
 
 
 export class DayMonth extends React.Component {
@@ -28,8 +28,7 @@ export class DayMonth extends React.Component {
 
   render() {
     const { currentDate } = this.state;
-    const monthData = getMonthData.getData(this.year, this.month);
-
+    const monthData = getData.Day(this.year, this.month);
     return (
 
         <table className='dayMonth'>
@@ -39,7 +38,7 @@ export class DayMonth extends React.Component {
                 {week.map((date, index) => date ?
                   <td key={index}
                     className={classnames('day', {
-                      'today': getMonthData.areEqualDay(date, currentDate),
+                      'today': date.getDate() === currentDate.getDate(),
                     })}
                   >{date.getDate()}</td>
                     :
