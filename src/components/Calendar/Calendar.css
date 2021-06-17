@@ -26,12 +26,11 @@
 
 }
 
-
-
 .confirmation {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   position: static;
   height: 64px;
   flex: none;
